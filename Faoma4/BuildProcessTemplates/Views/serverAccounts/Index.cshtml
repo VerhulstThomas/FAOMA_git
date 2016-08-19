@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Faoma4.serverAccount>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.teBeherenEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.teBeherenEmailPW)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.looptijd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.beheerdersEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastCheked)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.teBeherenEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.teBeherenEmailPW)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.looptijd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.beheerdersEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastCheked)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

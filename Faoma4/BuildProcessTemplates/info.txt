@@ -1,0 +1,16 @@
+testen
+
+edit documenten
+   @*@*@Html.TextBoxFor(model => model.datum, new { @class="form-control", disabled="disabled", @readonly = "readonly" })*@*@
+
+                @*@Html.ValidationMessageFor(model => model.datum, "", new { @class = "text-danger" })*@
+
+
+---------------
+transactionscopes:
+EF doet dit vanzelf bij savechanges 
+https://msdn.microsoft.com/en-us/data/dn456843.aspx
+
+-------------
+foto jumbotron
+https://www.google.be/search?q=images+automatisation&client=firefox-b&tbm=isch&imgil=_FpQNCfzXXjX5M%253A%253BE4OlDw3rq1ARNM%253Bhttp%25253A%25252F%25252Fwww.lookfordiagnosis.com%25252Fmesh_info.php%25253Fterm%2525253DAutomatisation%25252526lang%2525253D4&source=iu&pf=m&fir=_FpQNCfzXXjX5M%253A%252CE4OlDw3rq1ARNM%252C_&usg=__lUkwer8krQZiLzgie_nzCERFhkk%3D&biw=1366&bih=657&ved=0ahUKEwj08ajvmebMAhUlJ8AKHSftCdcQyjcIKA&ei=57k9V7TiFKXOgAan2qe4DQ#imgrc=rPq4epJQQl3FjM%3A

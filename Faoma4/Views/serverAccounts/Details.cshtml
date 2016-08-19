@@ -1,0 +1,80 @@
+﻿@model Faoma4.serverAccount
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details serveraccount</h2>
+
+<div>
+    @*<h4>serverAccount</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        @*<dt>
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>*@
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>*@
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.teBeherenEmail)*@
+            
+            <label>Te beheren email</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teBeherenEmail)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.teBeherenEmailPW)*@
+            <label>Paswoord</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teBeherenEmailPW)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.looptijd)*@
+            <label>Looptijd</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.looptijd)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.beheerdersEmail)*@
+            <label>Beheerders email</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.beheerdersEmail)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.lastCheked)*@
+            <label>Laatst nagekeken</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastCheked)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Wijzig", "Edit", new { id = Model.id }) 
+    @*@Html.ActionLink("Back to List", "Index")*@
+</p>

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faoma4", "Faoma4\Faoma4.csproj", "{4F24C302-6D1E-4681-829C-A7D25DF7F0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faoma4.Tests", "Faoma4.Tests\Faoma4.Tests.csproj", "{C17E61EF-0726-4A3D-97A5-2DFD7EF0B4A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopEmailChecker", "LoopEmailChecker\LoopEmailChecker.csproj", "{B0568AA5-FE03-4B37-AC01-E009E0DFBD9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{341DF348-3938-45FF-BCF6-6ED5D00A7FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{0B74816C-B485-422D-951A-507F21F4DF8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faoma-Client", "Faoma-Client\Faoma-Client.csproj", "{85A3D8BD-100D-4424-97A2-3C90A1985D93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F24C302-6D1E-4681-829C-A7D25DF7F0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F24C302-6D1E-4681-829C-A7D25DF7F0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F24C302-6D1E-4681-829C-A7D25DF7F0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F24C302-6D1E-4681-829C-A7D25DF7F0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17E61EF-0726-4A3D-97A5-2DFD7EF0B4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17E61EF-0726-4A3D-97A5-2DFD7EF0B4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17E61EF-0726-4A3D-97A5-2DFD7EF0B4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17E61EF-0726-4A3D-97A5-2DFD7EF0B4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0568AA5-FE03-4B37-AC01-E009E0DFBD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0568AA5-FE03-4B37-AC01-E009E0DFBD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0568AA5-FE03-4B37-AC01-E009E0DFBD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0568AA5-FE03-4B37-AC01-E009E0DFBD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341DF348-3938-45FF-BCF6-6ED5D00A7FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341DF348-3938-45FF-BCF6-6ED5D00A7FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341DF348-3938-45FF-BCF6-6ED5D00A7FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341DF348-3938-45FF-BCF6-6ED5D00A7FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B74816C-B485-422D-951A-507F21F4DF8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B74816C-B485-422D-951A-507F21F4DF8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B74816C-B485-422D-951A-507F21F4DF8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B74816C-B485-422D-951A-507F21F4DF8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A3D8BD-100D-4424-97A2-3C90A1985D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A3D8BD-100D-4424-97A2-3C90A1985D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A3D8BD-100D-4424-97A2-3C90A1985D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A3D8BD-100D-4424-97A2-3C90A1985D93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

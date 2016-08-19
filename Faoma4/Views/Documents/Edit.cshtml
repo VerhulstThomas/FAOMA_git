@@ -1,0 +1,96 @@
+﻿@model Faoma4.Document
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Wijzig document</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @*<h4>Document</h4>*@
+        @*@Faoma4.Mailk.getAllUnseenMails();*@
+        @*@Faoma4.Mailk.testLinq();*@
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.id)
+        
+        
+        <div>
+            @Html.DisplayNameFor(model => model.naam)
+        
+            @Html.DisplayFor(model => model.naam)
+        </div>
+
+        
+        
+        <!--laat de naam zien-->
+        
+        <div class="form-group">
+                @Html.LabelFor(model => model.naam, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DisplayFor(model => model.naam, new { @readonly = "readonly" })
+                    @Html.EditorFor(model => model.naam, new { htmlAttributes = new { @class = "form-control"} })
+                    @*@Html.ValidationMessageFor(model => model.naam, "", new { @class = "text-danger" })*@
+                </div>
+            </div>
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.verzendersEmail, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.verzendersEmail, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.verzendersEmail, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.link, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.link, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.link, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+        <!-- [Authorizise=]-->
+        @*@*<div class="form-group">
+            @Html.LabelFor(model => model.datum, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">*@
+        @*@Html.EditorFor(model => model.datum, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.DisplayFor(model => model.datum, new { htmlAttributes = new { @class = "form-control" } })*@
+        @*@*</div>
+            </div>*@
+        <!-- grijs maken http://stackoverflow.com/questions/5065984/html-editorfor-equivalent-for-viewing-read-only-data -->
+        <div class="form-group">
+            @Html.LabelFor(model => model.isBetaald, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.isBetaald, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.isBetaald, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.isOpgehaald, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.isOpgehaald, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.isOpgehaald, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Opslaan" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Terug naar de lijst", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

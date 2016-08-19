@@ -1,0 +1,40 @@
+﻿@model Faoma4.contacten
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Verwijder contact</h2>
+
+<h3>Ben je zeker dat je dit contact wil verwijderen?</h3>
+<div>
+    @*<h4>contacten</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bedrijfsnaam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bedrijfsnaam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.E_mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E_mail)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Verwijderen" class="btn btn-default" /> |
+            @Html.ActionLink("Terug naar de lijst", "Index")
+        </div>
+    }
+</div>

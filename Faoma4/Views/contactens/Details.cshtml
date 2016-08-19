@@ -1,0 +1,40 @@
+﻿@model Faoma4.contacten
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<h2>Details contacten</h2>
+
+<div>
+    @if (HttpContext.Current.Request.IsAuthenticated)
+    {
+    @*<h4>contacten</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Bedrijfsnaam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bedrijfsnaam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.E_mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E_mail)
+        </dd>
+
+    </dl>
+    }
+</div>
+<p>
+    @Html.ActionLink("Wijzig", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Terug naar de lijst", "Index")
+</p>
+

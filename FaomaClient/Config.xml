@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <config>
+    <email>tfeindwerkcvo@gmail.com</email>
+    <looptijd>1</looptijd>
+    <opslagPath>C:\Faoma\Downloads\faoma</opslagPath>
+    <basePath>C:\Users\thomas\Desktop\Eindwerk\gmailBestandenASP</basePath>
+    <uitwijkPad>C:\Uitwijk</uitwijkPad>
+  </config>
+</Settings>

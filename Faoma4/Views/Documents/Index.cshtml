@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Faoma4.Document>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.naam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.verzendersEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.link)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.datum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isBetaald)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isOpgehaald)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.naam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.verzendersEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.link)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.datum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isBetaald)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isOpgehaald)
+        </td>
+        <td>
+            @Html.ActionLink("Wijzig", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Verwijder", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

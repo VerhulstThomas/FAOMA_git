@@ -1,0 +1,80 @@
+﻿@model Faoma4.serverAccount
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>serverAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teBeherenEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teBeherenEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teBeherenEmailPW)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teBeherenEmailPW)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.looptijd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.looptijd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.beheerdersEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.beheerdersEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastCheked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastCheked)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

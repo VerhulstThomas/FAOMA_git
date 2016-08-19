@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+@*<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>*@
+<h2>Hoe werkt het</h2>
+<div>
+    <h2>Maak een email account</h2>
+    <p>Ga naar gmail en maak een account </p>
+    <p>Stel het account in zodat applicaties toegang krijgen </p>
+     @Html.ActionLink("Account voorbereiden", "EmailVoorbereiden", "HowtoAbout")
+</div>
+<div>
+    <h2>Maak een account op de server</h2>
+    <p>Klik in het hoofdscherm op "maak account" en vul de gegevens in</p>
+    <p>Download de software</p>
+</div>
+<div>
+    <h2>Installeer de software op je computer</h2>
+    <p>Open de software op je computer en installeer ze</p>
+    <p>Vul de gegevens in, het grootste deel zal default voorgesteld worden</p>
+</div>
+
+@Html.ActionLink("Home", "Index", "Home")

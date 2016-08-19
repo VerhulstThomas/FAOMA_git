@@ -1,0 +1,72 @@
+﻿@model Faoma4.Document
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Document</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.naam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.naam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.verzendersEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.verzendersEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isBetaald)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isBetaald)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isOpgehaald)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isOpgehaald)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Verwijder" class="btn btn-default" /> |
+            @Html.ActionLink("Terug naar de lijst", "Index")
+        </div>
+    }
+</div>

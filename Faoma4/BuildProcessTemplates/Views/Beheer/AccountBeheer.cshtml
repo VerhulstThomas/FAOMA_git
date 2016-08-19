@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "AccountBeheer";
+}
+
+<h2>Accountbeheer</h2>
+
+
+<!--met glyphicon-->
+@*<a href="@Url.Action("Create","contactens")" class="btn btn-primary btn-lg">
+    Beheer leveranciers
+    <span class="glyphicon glyphicon-address-book" aria-hidden="true"></span>
+</a>*@
+
+
+<div class="col-md-6">
+    
+    @if (HttpContext.Current.Request.IsAuthenticated)
+    {
+
+        @Html.ActionLink("Beheer leveranciers", "Create", "contactens", null, new { @class = "btn btn-primary btn-lg" })
+    }
+</div>
+<div class="col-md-6">
+   
+    @if (HttpContext.Current.Request.IsAuthenticated)
+    {
+        @Html.ActionLink("Beheer documenten", "Index", "Documents", null, new { @class = "btn btn-primary btn-lg" })
+    }
+</div>
+
+
+<br /><br /><br />
